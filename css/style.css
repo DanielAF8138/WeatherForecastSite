@@ -1,0 +1,233 @@
+html {
+    font-family: 'Courier New', Courier;
+    font-weight: bold;
+}
+
+body{
+    background: lightblue;
+}
+
+.report {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav {
+    list-style-type: none;
+    margin-bottom: 30px;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    width: 75%;
+    border-radius: 25px;
+}
+  
+.nav2 {
+    float: left;
+    width: 20%;
+    }
+  
+.nav3 {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Courier New', Courier;
+  }
+
+.nav3:hover {
+    background-color: black;
+    color: white;
+  }
+  
+.active {
+    background-color: grey;
+  }
+
+  /* Here is one media query for the nav bar. 
+  this will make it go vertical once the page 
+  goes under 600px */
+  @media screen and (max-width: 600px) {
+    .nav2 {
+      float: none;
+      display: block;
+      width: 100%;
+    }
+  }
+
+form {
+    text-align: center;
+}
+
+.zipform input{
+    text-align: center;
+    width: 20%;
+    border: none;
+    padding: 20px;
+    font-size: 1em;
+    outline: none;
+    margin-bottom: 5px;
+    background: #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    -webkit-transition: all 0.5s ;
+    -moz-transition: all 0.5s ;
+    -ms-transition: all 0.5s ;
+    -o-transition: all 0.5s ;
+    transition: all 0.5s ;
+}
+
+.form-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1em;
+    padding: 1em;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 2em;
+    font-size: 1.5em;
+}
+
+/* Here is a second media query, this one for our flex-box, 
+  this will make it go vertical once the page 
+  goes under 1000px */
+
+@media (min-width: 1000px) {
+    .grid-container {
+        grid-template-columns: auto auto auto;
+    }
+}
+  
+.wrap{
+    width: 1200px;
+    margin:30px auto;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 300px auto;
+}
+
+.mapform input{
+    width: 100%;
+    border: none;
+    padding: 20px;
+    font-size: 1em;
+    outline: none;
+    margin-bottom: 5px;
+    background: #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    -webkit-transition: all 0.5s ;
+    -moz-transition: all 0.5s ;
+    -ms-transition: all 0.5s ;
+    -o-transition: all 0.5s ;
+    transition: all 0.5s ;
+}
+
+.form input:focus{
+    background: #aaa;
+}
+.form .form__btn{
+    color: #aaa;
+    background: rgb(63, 192, 46);
+}
+
+#map{
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+}
+
+#mapinstructions {
+    text-align: center;
+    font-family: 'Courier New', Courier;
+    font-weight: bold;
+}
+
+.cards {
+    margin-top: 37px;
+    width: 85vw;
+    display: flex;
+    flex-wrap: wrap; /* This will prevent the cards from wrapping onto the next line */
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: auto; /* This will add a scrollbar if the cards overflow the container */
+    
+}
+
+.card-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.card-text {
+    text-align: center;
+}
+
+.card {
+    margin: 5px;
+    border-color: black;
+    border-width: 3px;
+}
+
+.monthcards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+  
+.monthcard {
+    margin: 10px;
+    width: 20rem;
+}
+  
+@media (max-width: 768px) {
+   .monthcard {
+    width: 100%;
+  }
+}
+
+.monthtitle {
+    margin-top: -5%;
+}
+
+.monthtext {
+    margin-top: 5%;
+    margin-bottom: -5%;
+}
+
+.monthimg {
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    text-align: center;
+}
+
+h2 {
+    font-size: 140%;
+}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Project 1</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+  
+<body>
+    <header>
+        <a href="report.html" target="_blank"><img class="report" src="images/weather.png" alt="Weather Logo"></a>
+    </header>
+
+    <nav>
+        <ul class="nav">
+        <li class="active nav2"><a class="nav3" href="index.html">Home</a></li>
+        <li class="nav2"><a class="nav3" href="day.html">Daily</a></li>
+        <li class="nav2"><a class="nav3" href="week.html">Weekly</a></li>
+        <li class="nav2"><a class="nav3" href="month.html">14-Day</a></li>
+        <li class="nav2"><a class="nav3" href="map.html">Map</a></li>
+       </ul>
+    </nav>
+
+    <main>
+        <form id="weatherForm" class="zipform">
+            <label for="zipcode">Enter your zipcode to get weather in your area:</label><br><br>
+            <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}" title="Five digit zip code"><br>
+            <input type="submit" value="Submit" >
+        </form>
+
+        <h1 id="mapinstructions">If you do not know your zipcode, you can also find your location using our <a href="map.html">MAP</a>.</h1>
+    
+        <div class="grid-container">
+          <div class="grid-item"><p id="today">Today: [enter zip]</p></div>
+          <div class="grid-item"><p id="tomorrow">Tomorrow: [enter zip]</p></div>
+          <div class="grid-item"><p id="thisweek">Day after: [enter zip]</p></div>  
+        </div>
+
+        <form id="export">
+            <input type="submit" value="export all data">
+        </form>
+        
+        <form id="clear">
+            <input type="submit" value="clear all data">
+        </form>
+
+        
+
+        <script src="script/index.js"></script>
+    </main>
+    
+  
+</body>
+</html>

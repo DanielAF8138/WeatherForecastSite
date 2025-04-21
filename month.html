@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Project 1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+  
+<body>
+    <header>
+        <a href="report.html" target="_blank"><img class="report" src="images/weather.png" alt="Weather Logo"></a>
+    </header>
+
+    <nav>
+        <ul class="nav">
+        <li class="nav2"><a class="nav3" href="index.html">Home</a></li>
+        <li class="nav2"><a class="nav3" href="day.html">Daily</a></li>
+        <li class="nav2"><a class="nav3" href="week.html">Weekly</a></li>
+        <li class="active nav2"><a class="nav3" href="month.html">14-Day</a></li>
+        <li class="nav2"><a class="nav3" href="map.html">Map</a></li>
+       </ul>
+    </nav>
+
+    <h1 class="title">
+        The Next 14 Day's Weather.
+    </h1>
+
+    <main>
+        <div class="cards flex-row monthcards">
+          <div class="card monthcard" style="width: 18rem;">
+              <img class="card-img-top monthimg" id="day0icon" src="..." alt="1">
+              <div class="card-body">
+                <h2 class="card-title monthtitle" id="day0title">...</h2>
+                <p class="card-text monthtext" id="max0"></p>
+                <p class="card-text monthtext" id="min0"></p>
+              </div>
+          </div>
+  
+          <div class="card monthcard" style="width: 18rem;">
+              <img class="card-img-top monthimg" id="day1icon" src="..." alt="2">
+              <div class="card-body">
+                <h2 class="card-title monthtitle" id="day1title">...</h2>
+                <p class="card-text monthtext" id="max1"></p>
+                <p class="card-text monthtext" id="min1"></p>
+              </div>
+          </div>
+  
+          <div class="card monthcard" style="width: 18rem;">
+              <img class="card-img-top monthimg" id="day2icon" src="..." alt="3">
+              <div class="card-body">
+                <h2 class="card-title monthtitle" id="day2title">...</h2>
+                <p class="card-text monthtext" id="max2"></p>
+                <p class="card-text monthtext" id="min2"></p>
+              </div>
+          </div>
+  
+          <div class="card monthcard" style="width: 18rem;">
+              <img class="card-img-top monthimg" id="day3icon" src="..." alt="4">
+              <div class="card-body">
+                <h2 class="card-title monthtitle" id="day3title">...</h2>
+                <p class="card-text monthtext" id="max3"></p>
+                <p class="card-text monthtext" id="min3"></p>
+              </div>
+          </div>
+  
+          <div class="card monthcard" style="width: 18rem;">
+              <img class="card-img-top monthimg" id="day4icon" src="..." alt="5">
+              <div class="card-body">
+                <h2 class="card-title monthtitle" id="day4title">...</h2>
+                <p class="card-text monthtext" id="max4"></p>
+                <p class="card-text monthtext" id="min4"></p>
+              </div>
+          </div>
+  
+          <div class="card monthcard" style="width: 18rem;">
+            <img class="card-img-top monthimg" id="day5icon" src="..." alt="6">
+            <div class="card-body">
+              <h2 class="card-title monthtitle" id="day5title">...</h2>
+              <p class="card-text monthtext" id="max5"></p>
+              <p class="card-text monthtext" id="min5"></p>
+            </div>
+          </div>
+
+            <div class="card monthcard" style="width: 18rem;">
+                <img class="card-img-top monthimg" id="day6icon" src="..." alt="7">
+                <div class="card-body">
+                  <h2 class="card-title monthtitle" id="day6title">...</h2>
+                  <p class="card-text monthtext" id="max6"></p>
+                  <p class="card-text monthtext" id="min6"></p>
+                </div>
+            </div>  
+
+        </div>
+
+
+        <div class="cards flex-row monthcards">
+            <div class="card monthcard" style="width: 18rem;">
+                <img class="card-img-top monthimg" id="day7icon" src="..." alt="8">
+                <div class="card-body">
+                  <h2 class="card-title monthtitle" id="day7title">...</h2>
+                  <p class="card-text monthtext" id="max7"></p>
+                  <p class="card-text monthtext" id="min7"></p>
+                </div>
+            </div>
+    
+            <div class="card monthcard" style="width: 18rem;">
+                <img class="card-img-top monthimg" id="day8icon" src="..." alt="9">
+                <div class="card-body">
+                  <h2 class="card-title monthtitle" id="day8title">...</h2>
+                  <p class="card-text monthtext" id="max8"></p>
+                  <p class="card-text monthtext" id="min8"></p>
+                </div>
+            </div>
+    
+            <div class="card monthcard" style="width: 18rem;">
+                <img class="card-img-top monthimg" id="day9icon" src="..." alt="10">
+                <div class="card-body">
+                  <h2 class="card-title monthtitle" id="day9title">...</h2>
+                  <p class="card-text monthtext" id="max9"></p>
+                  <p class="card-text monthtext" id="min9"></p>
+                </div>
+            </div>
+    
+            <div class="card monthcard" style="width: 18rem;">
+                <img class="card-img-top monthimg" id="day10icon" src="..." alt="11">
+                <div class="card-body">
+                  <h2 class="card-title monthtitle" id="day10title">...</h2>
+                  <p class="card-text monthtext" id="max10"></p>
+                  <p class="card-text monthtext" id="min10"></p>
+                </div>
+            </div>
+    
+            <div class="card monthcard" style="width: 18rem;">
+                <img class="card-img-top monthimg" id="day11icon" src="..." alt="12">
+                <div class="card-body">
+                  <h2 class="card-title monthtitle" id="day11title">...</h2>
+                  <p class="card-text monthtext" id="max11"></p>
+                  <p class="card-text monthtext" id="min11"></p>
+                </div>
+            </div>
+    
+            <div class="card monthcard" style="width: 18rem;">
+              <img class="card-img-top monthimg" id="day12icon" src="..." alt="13">
+              <div class="card-body">
+                <h2 class="card-title monthtitle" id="day12title">...</h2>
+                <p class="card-text monthtext" id="max12"></p>
+                <p class="card-text monthtext" id="min12"></p>
+              </div>
+            </div>
+  
+              <div class="card monthcard" style="width: 18rem;">
+                  <img class="card-img-top monthimg" id="day13icon" src=".." alt="14">
+                  <div class="card-body">
+                    <h2 class="card-title monthtitle" id="day13title">...</h2>
+                    <p class="card-text monthtext" id="max13"></p>
+                    <p class="card-text monthtext" id="min13"></p>
+                  </div>
+              </div>  
+  
+          </div>        
+  
+  
+  
+    </main>
+  
+      <script src="script/month.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+  </body>
+</html>

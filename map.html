@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">`
+    <title>Project 1</title>
+    <link rel = "stylesheet" href = "leaflet/leaflet.css"/>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+  
+<body>
+    <header>
+        <a href="report.html" target="_blank"><img class="report" src="images/weather.png" alt="Weather Logo"></a>
+    </header>
+
+    <nav>
+        <ul class="nav">
+        <li class="nav2"><a class="nav3" href="index.html">Home</a></li>
+        <li class="nav2"><a class="nav3" href="day.html">Daily</a></li>
+        <li class="nav2"><a class="nav3" href="week.html">Weekly</a></li>
+        <li class="nav2"><a class="nav3" href="month.html">14-Day</a></li>
+        <li class="active nav2"><a class="nav3" href="map.html">Map</a></li>
+       </ul>
+    </nav>
+
+    <h1 class="title">
+        Click a location on the map below then press submit.
+    </h1>
+
+    <main>
+
+        <div class="wrap">
+            
+            <form id="locationForm" action="..." class="mapform">
+                <input type="text" id="latitude" placeholder="latitude">
+                <input type="text" id="longitude" placeholder="longitude">
+                <input type="submit" value="Submit">
+            </form>
+        
+            <div id="map" style = "width: 700px; height: 480px;"></div>
+    
+        </div>
+
+
+    </main>
+
+    <script src ="leaflet/leaflet.js"></script>
+    <script src="script/map.js"></script>
+
+</body>
+</html>
